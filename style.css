@@ -51,7 +51,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: rgba(240, 240, 240, 0.5);
 }
 
 #title {
@@ -104,9 +104,6 @@ li a:hover {
     margin-top: 5px;
 }
 
-#burguer {
-    display: none;
-}
 
 /* Media Query: Large Smartphone */
 @media screen and (max-width: 600px) {
@@ -120,29 +117,6 @@ li a:hover {
     
     .image-container {
         margin: 10px;
-    }
-
-    /* Hide the links inside the navigation menu (except for logo/home) */
-    #navbar #items {
-        display: none;
-    }
-  
-     /* Style navigation menu links */
-    .topnav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
-  
-    /* Style the hamburger menu */
-    .topnav a.icon {
-        background: black;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
     }
   
 
