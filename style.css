@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Italianno&family=Rampart+One&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+#navbar{
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 5px 10px 10px 10px rgb(0 0 0 / 20%);
+}
+
+#items {
+    display: flex;
+    width: 100%;
+    margin-right: 50px;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    font-family: Ananda Pro, sans-serif;
+    padding: 20px 20px 0px 16px;
+    text-decoration: none;
+    height: 40px;
+    align-items: center;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#title {
+    text-align: center;
+    font-size: 40px;
+    font-family: Rampart One, sans-serif;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+
+.footer {
+    display: block;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 5px 10px 10px 10px rgb(0 0 0 / 20%);
+    color: black;
+    text-align: center;
+    font-family: Andada Pro, sans-serif;
+    font-weight: 700;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+.image-container {
+    margin: 10px 30%;
+}
+
+.image-container img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#burguer {
+    display: none;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+    #title {
+        font-size: 40px;
+    }
+
+    #burguer {
+        display: flex;
+    }
+    
+    .image-container {
+        margin: 10px;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    #navbar #items {
+        display: none;
+    }
+  
+     /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+  
+
+}
